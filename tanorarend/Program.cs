@@ -8,15 +8,16 @@ namespace tanorarend
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
+        public static Orarend orarend = null;
+        public static Login login = null;
         static void Main()
         {
+            Server.csatlakozas();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            login = new Login();
+            orarend = new Orarend();
+            Application.Run(login);
         }
     }
 }
