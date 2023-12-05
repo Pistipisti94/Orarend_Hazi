@@ -39,5 +39,9 @@ namespace tanorarend
                 Environment.Exit(1);
             }
         }
+        public static void bejelentkezes()
+        {
+            
+        }
     }
 }
